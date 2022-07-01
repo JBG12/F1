@@ -1,0 +1,296 @@
+/* * {
+    color: #eee;
+} */
+h1,
+h2,
+h3,
+p,
+a,
+button,
+input {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  text-decoration: none;
+}
+body {
+    margin: 0;
+    background: #efefef;
+}
+/*========================================================================
+  Header
+/*=======================================================================*/
+.headerBox {
+    background-color: red;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+}
+.header {
+    max-width: 1080px;
+    display: flex;
+    margin: 0 auto;
+    padding: 15px;
+}
+.header p {
+    width: 175px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-shadow: 0px 0px 2px #000;
+}
+.headerImg {
+    width: 150px;
+    margin-right: 15px;
+    filter: drop-shadow(4px 5px 2px rgba(0, 0, 0, 0.4));
+}
+/* Login */
+.login {
+    position: absolute;
+    right: 0;
+}
+.login form {
+    position: relative;
+}
+.submitMenu .boxOne {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.login form input {
+    display: block;
+    border: 2px solid #fff;
+    margin: 4px 20px;
+    background: red;
+    color: #fff;
+}
+.login .buttonForm, 
+.login .buttonLogout {
+    display: block;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    color: white;
+    background-color: red;
+    padding: 4px;
+    margin: 7px auto;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.login .buttonLogout {
+    margin: 25px;
+}
+.login button:hover {
+    color: red;
+    background-color: #fff;
+    border: 2px solid #fff;
+}
+.nav {
+    display: flex;
+    margin: 0px 20px;
+    font-weight: bold;
+    border-left: 3px solid #fff;
+    padding-left: 20px;
+}
+.nav .navItem {
+    align-self: center;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 25px;
+}
+.nav .navItem:hover {
+    text-decoration: underline;
+}
+/*========================================================================
+  Home Content
+/*=======================================================================*/
+.content {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+.content .races {
+    margin: 30px 0px;
+}
+.content .races .race {
+    background-color: #15151e;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+    position: relative;
+}
+.content .races .race h2 {
+    color: #fff;
+}
+.content .races .predict {
+    background-color: red;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    width: max-content;
+    padding: 7px;
+    border-radius: 7px;
+    cursor: pointer;
+    border: 2px solid red;
+    transition: all .3s ease;
+}
+.content .races .predict:hover {
+    color: red;
+    background-color: #fff;
+    border: 2px solid red;
+}
+.content .races .title {
+    color: #15151e; 
+    font-weight: bold;
+    padding: 5px 0px;
+    margin-top: 25px;
+}
+.race .pos {
+    display: flex;
+}
+.race .nr1,
+.race .nr2,
+.race .nr3 {
+    font-weight: bold;
+    width: min-content;
+    margin: 0px 10px;
+}
+.race .nr1,
+.raceV .nr1 {
+    color: gold;
+}
+.race .nr2,
+.raceV .nr2 {
+    color: silver;
+}
+.race .nr3,
+.raceV .nr3 {
+    color: brown;
+}
+.raceV .nr1,
+.raceV .nr2,
+.raceV .nr3 {
+    position: relative;
+    top: -3px;
+}
+.race p {
+    position: relative;
+    display: block;
+    
+}
+.race .date {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-weight: bold;
+}
+.notLogged {
+    color: #000;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20px;
+}
+.submitMenu .label,
+.submitMenu .number {
+    text-align: center;
+    font-weight: bold;
+    margin: 5px auto;
+    display: block;
+}
+body .submitMenu .number {
+    border: 2px solid #fff;
+    background-color: #15151e;
+    color: #FFF;
+    font-weight: normal;
+}
+.submitMenu .predict {
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+/*========================================================================
+  Voorspellingen Page
+/*=======================================================================*/
+.raceV {
+    background-color: #15151e;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 15px;
+    position: relative;
+}
+.check {
+    position: absolute;
+    left: 14%;
+    color: #fff;
+}
+.good::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f058";
+}
+.false::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f057";
+}
+.last {
+    top: 88%;
+}
+.dark {
+    color: #15151e;
+}
+/*========================================================================
+  Drivers Page
+/*=======================================================================*/
+.center {
+    text-align: center;
+}
+.drivers {
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: 1fr;
+}
+.driverBox {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.drivers .driver {
+    background-color: #15151e;
+    color: #fff;
+    padding: 10px;
+    margin: 7px 0px;
+    text-align: center;
+    border-radius: 0px;
+}
+.labels {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    margin-top: 25px;
+}
+.labels .driver.dark {
+    text-align: center;
+    font-weight: bold;
+}
+.msg {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -150px;
+    background-color: #000;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    padding: 5px 10px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 100;
+}
+.test2 {
+    position: absolute;
+    right: 13%;
+    top: 7%;
+}
+.pMSG {
+    text-align: center;
+    font-weight: bold;
+    margin: 10px;
+}
